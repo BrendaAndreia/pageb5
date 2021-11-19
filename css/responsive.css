@@ -1,0 +1,17 @@
+@media (min-width: 992px){
+
+    #form-contact .email
+    {
+        margin-top: -40px !important;
+        
+
+    }
+}
+@media (min-width: 768px){
+    .footer .column {
+        flex-basis: 160px;
+        flex-grow: 1; 
+        max-width: 190px;
+        margin-bottom: 28px;
+    }
+}

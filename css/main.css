@@ -1,0 +1,396 @@
+@import url('./bootstrap.min.css');
+@import url(./fontawesome.css);
+@import url(./responsive.css);
+/* ==== Fonts add ==== */
+@font-face {
+    font-family: Neutra;
+    src: url(../fonts/NeutraText-Book.otf);
+}
+
+
+/*Global style*/
+body{
+    margin: 0;
+    font-size: 16px;
+    font-family: 'Neutra';
+    background-color: #1C1C1C;
+}
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+
+a{
+    text-decoration: none !important;
+    color: inherit;
+}
+.icon {
+    color: #E9E9E9;
+    width: 10px;
+}
+.button1{
+    background-color: #b8a997;
+    border: none;
+    border: 3px double #fcca8d;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+    padding: 10px 15px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+.button1:hover{
+    background-color: #b8a997;
+    border-color:  #fcca8d;
+}
+.button1::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    transition: all ease 0.3s;
+    z-index: -1;
+}
+.button1:hover::before{
+    width: 100%;
+    border-color:  #fcca8d;
+}
+.bg-dark{
+    background-color: #1C1C1C;
+    
+}
+.bg-ligth{
+    background-color: #E9E9E9;
+}
+.section-title{
+    text-align: center;
+}
+.section-title .title{
+    font-size: 34px;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: 3.4px;
+    display: inline-block;
+    text-transform: uppercase;
+    margin: 0 0 25px;
+    position: relative;
+    padding: 5px 0px;
+}
+.section-content p{
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.8px;
+    margin: 0;
+}
+ul{
+    list-style: none;
+    padding: 0;
+}
+/*====Header====*/
+
+#header .navbar{
+    background-color: #b8a997;
+}
+#header .navbar .navbar-brand{
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #fff;
+}
+#header .navbar #navbarNav .nav-item .nav-link{
+    color: #fff;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-family: 'Neutra';
+    font-weight: 700;
+    line-height: 24px;
+    text-align: start;
+    letter-spacing: 0.8px;
+    padding: 20px 15px 20px;
+    opacity: 0.5;
+}
+#header .navbar #navbarNav .nav-item .nav-link.active{
+    opacity: 1;
+}
+
+/* ==== Home Section ==== */
+
+#home{
+    padding: 150px 0 200px;
+    background-color: #b8a997;
+    align-items: center;
+    height: 100vh;
+
+}
+
+#home h1{
+    text-transform: uppercase;
+    font-size: 42px;
+    color: #fff;
+    line-height:52px;
+    letter-spacing: 6px;
+}
+#home p{
+    color: #fff;
+    font-size: 16px;
+    margin-top: 20px;
+    line-height: 24px;
+    letter-spacing: 0.8px;
+}
+#home #home-img{
+
+    animation: product01 5s linear infinite;
+}
+#home #home-img img{
+    max-width: 400px;
+    width: 100%;
+    position: absolute;
+    transform: rotate(40deg);
+}
+@keyframes product01 {
+    0%,100%{
+        transform: translateY(15px);
+    }
+    50%{
+        transform: translateY(-15px);
+    }
+}
+/* ==== About Section ==== */
+#about{
+
+    position: relative;
+    padding: 80px 0 80px;
+}
+
+/* #about #about-img{margin: auto;} */
+#about #about-img img{
+    max-width: 250px;
+    width: 100%;
+}
+#about .section-title .title{
+    color:#1C1C1C;
+}
+#about .section-content p{
+    color: #1C1C1C;
+    opacity: 0.6;
+    font-weight: 500;
+}
+
+/* ==== Features Section ==== */
+#features{
+    color: #fff;
+    padding: 80px 0 80px;
+}
+#features .feature-item{
+    padding: 40px 30px;
+    text-align: center;
+}
+#features .feature-item:hover img{
+    transform: scale(1.05);
+    
+}
+.feature-img{
+    margin-bottom: 15px;
+}
+#features .feature-img img{
+    max-width: 400px;
+    width: 100%;
+    transition: all 2s ease-in-out;
+}
+
+#features .section-title .title{
+    color: #fff;
+    font-size: 24px;
+    font-weight: 100;
+
+}
+#features .section-content p{
+    color: #E9E9E9;
+    font-weight: 100;
+    opacity: 0.5;
+    
+}
+
+/* ==== Product Section ==== */
+#products{
+    padding: 80px 0 80px;
+}
+
+#products .product-img img{
+    width: 100%;
+    max-width: 500px;
+    display: block;
+    padding: 70px;
+}
+#products .product-content{
+    padding: 0 30px;
+    text-align: center;
+}
+#products .product-item:hover .product-name{
+    color: #b8a997;
+}
+#products .product-content .product-price{
+    margin: 15px 0 5px;
+}
+#products .product-content .product-price .price{
+    font-size: 16px;
+    display: inline-block;
+    margin: 0 5px;
+    color: #959595;
+    margin-bottom: 30px;
+}
+#products .product-content .product-price .old-price{
+  
+    text-decoration: line-through;
+}
+#products .product-content .product-name{
+    text-transform: uppercase;
+    font-size: 18px;
+    color: #1C1C1C;
+}
+/* ==== Contact Section ==== */
+#contact{
+    background-image: url('../assets/bg-contact.jpg');
+    padding: 80px 0 80px;
+    background-attachment:fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+}
+#contact .section-title{
+    flex-direction: column;
+    align-items: center;
+}
+#contact .section-title .title{
+    color: #E9E9E9;
+    text-transform: capitalize;
+    font-weight: 100;
+}
+#contact .section-content p{
+    color: #E9E9E9;
+    
+}
+#contact .form-contact{
+    margin-top: 170px;
+}
+#form-contact{
+    background-color: #1F1D1D;
+    padding: 80px 0 80px;
+}
+#form-contact .form-contact input,
+#form-contact .form-contact textarea{
+    background-color: #1F1D1D;
+    box-shadow: none;
+    color: #959595;
+    border-radius: 0;
+    border-color: #959595;
+}
+#form-contact .form-contact input:focus,
+#form-contact .form-contact textarea:focus{
+    border-color: #E9E9E9;
+}
+#form-contact .form-contact label{
+    color: #959595;
+    text-transform: capitalize;
+    letter-spacing: 0.8px;
+}
+#form-contact .email{
+    color: #E9E9E9;
+    margin-top: 10px;
+}
+#form-contact .email h4{
+    line-height: 16px;
+    text-transform: uppercase;
+}
+#form-contact h4{
+    color: #E9E9E9;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    line-height: 24px;
+}
+#form-contact .email a{
+    color: #E9E9E9;
+    opacity: 0.7;
+}
+#form-contact .email a:hover{
+    opacity: 1;
+}
+#form-contact .btn-send{
+    color: #E9E9E9;
+    background-color: #b8a997;
+    border: none;
+    border-radius: 0;
+    text-transform: uppercase;
+    padding: 10px 10px;
+    letter-spacing: 0.8px;
+}
+/* ==== Footer Section ==== */
+.footer{
+    background-color: #141414;
+    color: #cebebe;
+    padding: 80px 0 80px;
+}
+.footer .footer-title {
+    color: #cab49b;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+.footer .footer-column{
+    letter-spacing: 0;
+    padding-bottom: 11px;
+    text-transform: capitalize;
+}
+.footer .column li {
+    letter-spacing: 0;
+    padding-bottom: 11px;
+    text-transform: capitalize;
+}
+.footer a {
+    transition: all .1s ease;
+}
+.footer a:hover{
+    color: #E9E9E9;
+}
+.footer-payments {
+    display: flex;
+    flex-wrap: wrap;
+}
+.footer-payments li {
+    background: #fff url("../assets/payments.jpg") no-repeat 50% 0 / auto 600%;
+    border-radius: 1px;
+    flex-shrink: 0;
+    height: 22px;
+    width: 36px;
+    margin: 0 0px 6px 6px;
+}
+/* ==== payments item ==== */
+.footer-payments .mastercard{
+    background-position-y: -67px;
+}
+.footer-payments .visa{
+    background-position-y: bottom;
+}
+.footer-payments .paypal{
+    background-position-y: -90px;
+}
+.footer-payments .american{
+    background-position-y: 0px;
+}
+.footer-payments .applepay{
+    background-position-y: -25px;
+}
+.footer-payments .gpay{
+    background-position-y: -45px;
+}
+
+.review img{
+    max-width: 100%;
+}
