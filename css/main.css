@@ -99,6 +99,9 @@ ul{
 #header .navbar{
     background-color: #b8a997;
 }
+.bg-auxiliar{
+    background-color: #141414;
+}
 #header .navbar .navbar-brand{
     font-size: 30px;
     font-weight: 700;
@@ -342,12 +345,9 @@ ul{
     color: #cab49b;
     letter-spacing: 0.1em;
     text-transform: uppercase;
+    position: relative;
 }
-.footer .footer-column{
-    letter-spacing: 0;
-    padding-bottom: 11px;
-    text-transform: capitalize;
-}
+
 .footer .column li {
     letter-spacing: 0;
     padding-bottom: 11px;
@@ -393,4 +393,14 @@ ul{
 
 .review img{
     max-width: 100%;
+}
+.footer .column:not(.column-payments) .footer-title i{
+    align-items: center;
+    right: 12px;
+    top: calc(50% - 10px);
+    height: 20px;
+    width: 20px;
+    transition: all .2s ease;
+    position: absolute;
+    cursor: pointer;
 }

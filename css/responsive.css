@@ -1,17 +1,35 @@
+@media(max-width:767px){
+    .footer .container {
+        max-width: 100%
+    }
+    .column-display{
+        display: none;
+    }
+    .footer .footer-title{
+        margin-bottom: 15px;
+    }
+    .footer .column-payments{
+       display: flex;
+       flex-direction: column;
+       margin-top: 50px;
+       align-items: center;
+    }
+    .footer .column-payments h6{
+        display: none;
+    }
+    .footer  .review img{
+        width: 200px;
+    }
+}
 @media (min-width: 992px){
 
     #form-contact .email
     {
         margin-top: -40px !important;
-        
+    }
+    .column-display{
+        display: block;
+    }
 
-    }
 }
-@media (min-width: 768px){
-    .footer .column {
-        flex-basis: 160px;
-        flex-grow: 1; 
-        max-width: 190px;
-        margin-bottom: 28px;
-    }
-}
+
