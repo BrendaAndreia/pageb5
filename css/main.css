@@ -412,3 +412,6 @@ ul{
     color: inherit;
     text-align: center;
   }
+.footer .column-display{
+    display: none;
+}

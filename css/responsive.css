@@ -8,12 +8,8 @@
 #products .product-img img{
     padding-bottom: 10px !important;
 }
-
 .footer .container {
     max-width: 100%
-}
-.column-display{
-    display: block;
 }
 .footer .footer-title{
     margin-bottom: 15px;
@@ -43,7 +39,7 @@
     margin-top: -40px !important;
 }
 .column-display{
-    display: block;
+    display: block !important;
 }
 
 }
