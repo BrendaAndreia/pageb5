@@ -14,6 +14,7 @@ body{
     font-size: 16px;
     font-family: 'Neutra';
     background-color: #1C1C1C;
+    
 }
 *{
     margin: 0;
@@ -98,6 +99,7 @@ ul{
 
 #header .navbar{
     background-color: #b8a997;
+    transition: all 2s ease;
 }
 .bg-auxiliar{
     background-color: #141414;
@@ -130,8 +132,6 @@ ul{
     padding: 150px 0 200px;
     background-color: #b8a997;
     align-items: center;
-    height: 100vh;
-
 }
 
 #home h1{
@@ -148,11 +148,11 @@ ul{
     line-height: 24px;
     letter-spacing: 0.8px;
 }
-#home #home-img{
+#home .home-img{
 
     animation: product01 5s linear infinite;
 }
-#home #home-img img{
+#home .home-img img{
     max-width: 400px;
     width: 100%;
     position: absolute;
@@ -168,18 +168,18 @@ ul{
 }
 /* ==== About Section ==== */
 #about{
-
     position: relative;
     padding: 80px 0 80px;
 }
 
 /* #about #about-img{margin: auto;} */
-#about #about-img img{
-    max-width: 250px;
-    width: 100%;
+#about .about-img img{
+    width: 150px;
+    max-width: 100%;
 }
 #about .section-title .title{
     color:#1C1C1C;
+    font-size: 24px;
 }
 #about .section-content p{
     color: #1C1C1C;
@@ -339,7 +339,7 @@ ul{
 .footer{
     background-color: #141414;
     color: #cebebe;
-    padding: 80px 0 80px;
+    padding: 80px 0 30px;
 }
 .footer .footer-title {
     color: #cab49b;
@@ -404,3 +404,9 @@ ul{
     position: absolute;
     cursor: pointer;
 }
+.footer .copyright-texto {
+    font-size: 15px;
+    margin-top: 50px;
+    color: inherit;
+    text-align: center;
+  }
